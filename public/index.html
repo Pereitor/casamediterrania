@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casa vacacional de 2 plantas y 3 habitaciones para alquiler. Ubicación privilegiada, completamente equipada con WiFi, estacionamiento y cocina completa.">
+    <meta name="keywords" content="casa vacacional, alquiler, 3 habitaciones, 2 plantas, vacaciones, turismo, booking, airbnb">
+    <meta name="author" content="Casa Vacacional">
+    <meta property="og:title" content="Casa Vacacional - Alquiler de Casa de 3 Habitaciones">
+    <meta property="og:description" content="Casa vacacional de 2 plantas y 3 habitaciones para alquiler. Ubicación privilegiada, completamente equipada.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/casa-exterior.jpg">
+    <title>Casa Vacacional - Alquiler de Casa de 3 Habitaciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Casa Vacacional</h1>
+                </div>
+                <nav id="main-nav" class="desktop-nav">
+                    <a href="#inicio" data-i18n="nav.home">Inicio</a>
+                    <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+                    <a href="#ubicacion" data-i18n="nav.location">Ubicación</a>
+                    <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+                    <div id="language-selector">
+                        <button id="language-btn" class="language-button">
+                            <span id="language-icon">🌐</span>
+                            <span id="current-language">Español</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div id="language-dropdown" class="language-dropdown">
+                            <!-- Se poblará dinámicamente desde languages.json -->
+                        </div>
+                    </div>
+                    <button id="book-now-btn" class="book-now-button" data-i18n="nav.bookNow">Reservar Ahora</button>
+                </nav>
+                <div class="mobile-nav">
+                    <div id="mobile-language-selector">
+                        <button id="mobile-language-btn" class="language-button">
+                            <span id="mobile-language-icon">🌐</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h2 id="hero-title" data-i18n="hero.title">Tu Casa de Ensueño</h2>
+                    <p id="hero-subtitle" data-i18n="hero.subtitle">Casa de 2 plantas y 3 habitaciones en ubicación privilegiada</p>
+                </div>
+                
+                <!-- Formulario de Reserva -->
+                <div id="booking-form" class="booking-form">
+                    <div class="form-header">
+                        <h3 data-i18n="hero.bookingForm.title">Reserva tu estancia</h3>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin" data-i18n="hero.bookingForm.checkIn">Check-in</label>
+                                <input type="date" id="checkin" name="checkin">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout" data-i18n="hero.bookingForm.checkOut">Check-out</label>
+                                <input type="date" id="checkout" name="checkout">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests" data-i18n="hero.bookingForm.guests">Huéspedes</label>
+                                <input type="number" id="guests" name="guests" min="1" max="8" value="2">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" id="search-btn" data-i18n="hero.bookingForm.search">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Destacadas -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 data-i18n="features.title">¿Por qué elegir nuestra casa?</h3>
+                <p data-i18n="features.subtitle">Disfruta de una experiencia única en nuestra casa completamente equipada</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h4 data-i18n="features.guests.title">Hasta 8 Huéspedes</h4>
+                    <p data-i18n="features.guests.description">Espacio cómodo para familias grandes o grupos de amigos</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📶</div>
+                    <h4 data-i18n="features.wifi.title">WiFi Gratuito</h4>
+                    <p data-i18n="features.wifi.description">Internet de alta velocidad en toda la casa</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h4 data-i18n="features.parking.title">Estacionamiento</h4>
+                    <p data-i18n="features.parking.description">Estacionamiento privado gratuito</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">☕</div>
+                    <h4 data-i18n="features.kitchen.title">Cocina Completa</h4>
+                    <p data-i18n="features.kitchen.description">Cocina totalmente equipada para preparar tus comidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 data-i18n="gallery.title">Galería de Imágenes</h3>
+                <p data-i18n="gallery.subtitle">Descubre todos los espacios de nuestra hermosa casa</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/casa-exterior.jpg" alt="Vista Exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p data-i18n="gallery.exterior">Vista Exterior</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/images/sala-estar.jpg" alt="Sala de Estar" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p data-i18n="gallery.livingRoom">Sala de Estar</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/images/habitacion-principal.jpg" alt="Habitación Principal" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p data-i18n="gallery.bedroom">Habitación Principal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de la Propiedad -->
+    <section id="property" class="property-section">
+        <div class="container">
+            <div class="property-content">
+                <div class="property-info">
+                    <h3 data-i18n="property.title">Acerca de la Propiedad</h3>
+                    <p data-i18n="property.description">Nuestra hermosa casa de 2 plantas y 3 habitaciones está diseñada para ofrecerte la máxima comodidad durante tu estancia. Con espacios amplios y luminosos, decoración moderna y todas las amenidades que necesitas.</p>
+                    
+                    <div class="property-badges">
+                        <span class="badge" data-i18n="property.badges.bedrooms">3 Habitaciones</span>
+                        <span class="badge" data-i18n="property.badges.bathrooms">2 Baños</span>
+                        <span class="badge" data-i18n="property.badges.floors">2 Plantas</span>
+                    </div>
+                    
+                    <div class="property-features">
+                        <div class="property-feature">
+                            <span class="feature-icon">👥</span>
+                            <span data-i18n="features.guests.title">Hasta 8 Huéspedes</span>
+                        </div>
+                        <div class="property-feature">
+                            <span class="feature-icon">📶</span>
+                            <span data-i18n="features.wifi.title">WiFi Gratuito</span>
+                        </div>
+                        <div class="property-feature">
+                            <span class="feature-icon">🚗</span>
+                            <span data-i18n="features.parking.title">Estacionamiento</span>
+                        </div>
+                        <div class="property-feature">
+                            <span class="feature-icon">☕</span>
+                            <span data-i18n="features.kitchen.title">Cocina Completa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="amenities-info">
+                    <h4 data-i18n="property.amenities.title">Amenidades</h4>
+                    <div class="amenities-grid">
+                        <div class="amenity-card">
+                            <h5 data-i18n="property.amenities.kitchen.title">Cocina</h5>
+                            <p data-i18n="property.amenities.kitchen.description">Refrigerador, estufa, horno, microondas, cafetera, utensilios completos</p>
+                        </div>
+                        
+                        <div class="amenity-card">
+                            <h5 data-i18n="property.amenities.entertainment.title">Entretenimiento</h5>
+                            <p data-i18n="property.amenities.entertainment.description">TV de pantalla plana, WiFi de alta velocidad, sistema de sonido</p>
+                        </div>
+                        
+                        <div class="amenity-card">
+                            <h5 data-i18n="property.amenities.comfort.title">Comodidades</h5>
+                            <p data-i18n="property.amenities.comfort.description">Aire acondicionado, calefacción, lavadora, secadora, plancha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 data-i18n="testimonials.title">Lo que dicen nuestros huéspedes</h3>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p data-i18n="testimonials.reviews.0.text">"Una casa increíble, muy limpia y con todas las comodidades. La ubicación es perfecta y el anfitrión muy atento."</p>
+                    <p class="author" data-i18n="testimonials.reviews.0.author">- María González</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p data-i18n="testimonials.reviews.1.text">"Perfecta para familias. Los niños disfrutaron mucho y nosotros pudimos relajarnos. Definitivamente volveremos."</p>
+                    <p class="author" data-i18n="testimonials.reviews.1.author">- Carlos Rodríguez</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p data-i18n="testimonials.reviews.2.text">"Excelente relación calidad-precio. La casa superó nuestras expectativas en todos los aspectos."</p>
+                    <p class="author" data-i18n="testimonials.reviews.2.author">- Ana Martínez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 data-i18n="location.title">Ubicación Privilegiada</h3>
+                <p data-i18n="location.subtitle">Cerca de las mejores atracciones y servicios</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <p data-i18n="location.mapPlaceholder">Mapa interactivo</p>
+                        <p class="map-note" data-i18n="location.mapNote">Ubicación exacta disponible tras la reserva</p>
+                    </div>
+                </div>
+                
+                <div class="nearby-places">
+                    <h4 data-i18n="location.nearbyTitle">Lugares de Interés Cercanos</h4>
+                    <div class="places-list">
+                        <div class="place-item">
+                            <span class="place-icon">📍</span>
+                            <div class="place-info">
+                                <p class="place-name" data-i18n="location.nearby.historic.name">Centro Histórico</p>
+                                <p class="place-distance" data-i18n="location.nearby.historic.distance">5 minutos en auto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="place-item">
+                            <span class="place-icon">📍</span>
+                            <div class="place-info">
+                                <p class="place-name" data-i18n="location.nearby.beach.name">Playa Principal</p>
+                                <p class="place-distance" data-i18n="location.nearby.beach.distance">10 minutos en auto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="place-item">
+                            <span class="place-icon">📍</span>
+                            <div class="place-info">
+                                <p class="place-name" data-i18n="location.nearby.supermarket.name">Supermercado</p>
+                                <p class="place-distance" data-i18n="location.nearby.supermarket.distance">3 minutos caminando</p>
+                            </div>
+                        </div>
+                        
+                        <div class="place-item">
+                            <span class="place-icon">📍</span>
+                            <div class="place-info">
+                                <p class="place-name" data-i18n="location.nearby.restaurants.name">Restaurantes</p>
+                                <p class="place-distance" data-i18n="location.nearby.restaurants.distance">2 minutos caminando</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 data-i18n="contact.title">Contáctanos</h3>
+                <p data-i18n="contact.subtitle">¿Tienes preguntas? Estamos aquí para ayudarte</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h4 data-i18n="contact.form.title">Envíanos un mensaje</h4>
+                        <p data-i18n="contact.form.subtitle">Te responderemos lo antes posible</p>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" data-i18n="contact.form.name">Nombre</label>
+                                <input type="text" id="contact-name" name="name" data-i18n-placeholder="contact.form.namePlaceholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" data-i18n="contact.form.email">Email</label>
+                                <input type="email" id="contact-email" name="email" data-i18n-placeholder="contact.form.emailPlaceholder">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" data-i18n="contact.form.message">Mensaje</label>
+                            <textarea id="contact-message" name="message" rows="4" data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+                        </div>
+                        <button type="submit" data-i18n="contact.form.send">Enviar Mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h4 data-i18n="contact.info.title">Información de Contacto</h4>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-details">
+                                <p class="contact-label" data-i18n="contact.info.phone">Teléfono</p>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div class="contact-details">
+                                <p class="contact-label" data-i18n="contact.info.email">Email</p>
+                                <p class="contact-value">info@casavacacional.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <div class="contact-details">
+                                <p class="contact-label" data-i18n="contact.info.whatsapp">WhatsApp</p>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hours-section">
+                        <h4 data-i18n="contact.hours.title">Horarios de Atención</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span data-i18n="contact.hours.weekdays">Lunes - Viernes</span>
+                                <span>9:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span data-i18n="contact.hours.saturday">Sábados</span>
+                                <span>10:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span data-i18n="contact.hours.sunday">Domingos</span>
+                                <span>12:00 PM - 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Casa Vacacional</h5>
+                    <p data-i18n="footer.description">Tu hogar lejos de casa. Disfruta de una experiencia única en nuestra hermosa propiedad.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h6 data-i18n="footer.quickLinks">Enlaces Rápidos</h6>
+                    <div class="footer-links">
+                        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+                        <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+                        <a href="#ubicacion" data-i18n="nav.location">Ubicación</a>
+                        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h6 data-i18n="footer.followUs">Síguenos</h6>
+                    <div class="social-links">
+                        <a href="#" data-i18n="footer.social.facebook">Facebook</a>
+                        <a href="#" data-i18n="footer.social.instagram">Instagram</a>
+                        <a href="#" data-i18n="footer.social.twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2025 Casa Vacacional. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

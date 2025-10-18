@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "location": "Location",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Your Dream House",
+    "subtitle": "2-story house with 3 bedrooms in a privileged location",
+    "bookingForm": {
+      "title": "Book your stay",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "guests": "Guests",
+      "search": "Search"
+    }
+  },
+  "features": {
+    "title": "Why choose our house?",
+    "subtitle": "Enjoy a unique experience in our fully equipped house",
+    "guests": {
+      "title": "Up to 8 Guests",
+      "description": "Comfortable space for large families or groups of friends"
+    },
+    "wifi": {
+      "title": "Free WiFi",
+      "description": "High-speed internet throughout the house"
+    },
+    "parking": {
+      "title": "Parking",
+      "description": "Free private parking"
+    },
+    "kitchen": {
+      "title": "Full Kitchen",
+      "description": "Fully equipped kitchen to prepare your meals"
+    }
+  },
+  "gallery": {
+    "title": "Image Gallery",
+    "subtitle": "Discover all the spaces of our beautiful house",
+    "exterior": "Exterior View",
+    "livingRoom": "Living Room",
+    "bedroom": "Master Bedroom"
+  },
+  "property": {
+    "title": "About the Property",
+    "description": "Our beautiful 2-story house with 3 bedrooms is designed to offer you maximum comfort during your stay. With spacious and bright spaces, modern decoration and all the amenities you need.",
+    "badges": {
+      "bedrooms": "3 Bedrooms",
+      "bathrooms": "2 Bathrooms",
+      "floors": "2 Floors"
+    },
+    "amenities": {
+      "title": "Amenities",
+      "kitchen": {
+        "title": "Kitchen",
+        "description": "Refrigerator, stove, oven, microwave, coffee maker, complete utensils"
+      },
+      "entertainment": {
+        "title": "Entertainment",
+        "description": "Flat screen TV, high-speed WiFi, sound system"
+      },
+      "comfort": {
+        "title": "Comfort",
+        "description": "Air conditioning, heating, washing machine, dryer, iron"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What our guests say",
+    "reviews": [
+      {
+        "text": "An incredible house, very clean and with all the amenities. The location is perfect and the host very attentive.",
+        "author": "Maria González"
+      },
+      {
+        "text": "Perfect for families. The children enjoyed it a lot and we were able to relax. We will definitely come back.",
+        "author": "Carlos Rodríguez"
+      },
+      {
+        "text": "Excellent value for money. The house exceeded our expectations in all aspects.",
+        "author": "Ana Martínez"
+      }
+    ]
+  },
+  "location": {
+    "title": "Privileged Location",
+    "subtitle": "Close to the best attractions and services",
+    "mapPlaceholder": "Interactive map",
+    "mapNote": "Exact location available after booking",
+    "nearbyTitle": "Nearby Places of Interest",
+    "nearby": {
+      "historic": {
+        "name": "Historic Center",
+        "distance": "5 minutes by car"
+      },
+      "beach": {
+        "name": "Main Beach",
+        "distance": "10 minutes by car"
+      },
+      "supermarket": {
+        "name": "Supermarket",
+        "distance": "3 minutes walking"
+      },
+      "restaurants": {
+        "name": "Restaurants",
+        "distance": "2 minutes walking"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions? We're here to help you",
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "We'll respond as soon as possible",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "send": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturdays",
+      "sunday": "Sundays"
+    }
+  },
+  "footer": {
+    "description": "Your home away from home. Enjoy a unique experience in our beautiful property.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "© 2025 Casa Vacacional. All rights reserved."
+  }
+}
+

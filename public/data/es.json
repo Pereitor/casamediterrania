@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "gallery": "Galería",
+    "location": "Ubicación",
+    "contact": "Contacto",
+    "bookNow": "Reservar Ahora"
+  },
+  "hero": {
+    "title": "Casa Mediterrània",
+    "subtitle": "Casa de 2 plantas y 3 habitaciones en ubicación privilegiada",
+    "bookingForm": {
+      "title": "Reserva tu estancia",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "guests": "Huéspedes",
+      "search": "Buscar"
+    }
+  },
+  "features": {
+    "title": "¿Por qué elegir nuestra casa?",
+    "subtitle": "Disfruta de una experiencia única en nuestra casa completamente equipada",
+    "guests": {
+      "title": "Hasta 4 huéspedes",
+      "description": "Espacio cómodo para familias o grupos reducidos"
+    },
+    "wifi": {
+      "title": "WiFi gratuito",
+      "description": "Internet de alta velocidad en toda la casa"
+    },
+    "parking": {
+      "title": "Estacionamiento",
+      "description": "Fácil estacionamiento en los alrededores de la casa"
+    },
+    "kitchen": {
+      "title": "Cocina completa",
+      "description": "Cocina totalmente equipada para preparar tus comidas"
+    }
+  },
+  "gallery": {
+    "title": "Galería de imágenes",
+    "subtitle": "Descubre todos los espacios de nuestra hermosa casa",
+    "exterior": "Vista exterior",
+    "livingRoom": "Sala de estar",
+    "bedroom": "Habitación principal"
+  },
+  "property": {
+    "title": "Acerca de la propiedad",
+    "description": "Nuestra hermosa casa de 2 plantas y 3 habitaciones está diseñada para ofrecerte la máxima comodidad durante tu estancia. Con espacios amplios y luminosos, decoración moderna y todas las comodidades que necesitas.",
+    "badges": {
+      "bedrooms": "3 Habitaciones",
+      "bathrooms": "2 Baños",
+      "floors": "2 Plantas"
+    },
+    "amenities": {
+      "title": "Comodidades",
+      "kitchen": {
+        "title": "Cocina",
+        "description": "Nevera, fogones de gas, horno, microondas, cafetera, utensilios completos"
+      },
+      "entertainment": {
+        "title": "Entretenimiento",
+        "description": "TV de pantalla plana, WiFi de alta velocidad, sistema de sonido, proyección, televisión por satélite"
+      },
+      "comfort": {
+        "title": "Comodidades",
+        "description": "Aire acondicionado, calefacción, lavadora, plancha"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros huéspedes",
+    "reviews": [
+      {
+        "text": "Una casa increíble, muy limpia y con todas las comodidades. La ubicación es perfecta y el anfitrión muy atento.",
+        "author": "María González"
+      },
+      {
+        "text": "Perfecta para familias. Los niños disfrutaron mucho y nosotros pudimos relajarnos. Definitivamente volveremos.",
+        "author": "Carlos Rodríguez"
+      },
+      {
+        "text": "Excelente relación calidad-precio. La casa superó nuestras expectativas en todos los aspectos.",
+        "author": "Ana Martínez"
+      }
+    ]
+  },
+  "location": {
+    "title": "Ubicación privilegiada",
+    "subtitle": "Cerca de las mejores atracciones y servicios",
+    "mapPlaceholder": "Mapa interactivo",
+    "mapNote": "Ubicación exacta disponible tras la reserva",
+    "nearbyTitle": "Lugares de interés cercanos",
+    "nearby": {
+      "historic": {
+        "name": "Centro Histórico",
+        "distance": "5 minutos en auto"
+      },
+      "beach": {
+        "name": "Playa de Xeraco",
+        "distance": "Menos de 5 minutos en coche"
+      },
+      "supermarket": {
+        "name": "Supermercados",
+        "distance": "A menos de 5 minutos caminando"
+      },
+      "restaurants": {
+        "name": "Bares y restaurantes",
+        "distance": "A 2 minutos caminando"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes preguntas? Estamos aquí para ayudarte",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Te responderemos lo antes posible",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Tu mensaje...",
+      "send": "Enviar Mensaje"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "phone": "Teléfono",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "Horarios de Atención",
+      "weekdays": "Lunes - Viernes",
+      "saturday": "Sábados",
+      "sunday": "Domingos"
+    }
+  },
+  "footer": {
+    "description": "Tu hogar lejos de casa. Disfruta de una experiencia única en nuestra hermosa propiedad.",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "© 2025 Casa Vacacional. Todos los derechos reservados."
+  }
+}
+

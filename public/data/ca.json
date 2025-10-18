@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Inici",
+    "gallery": "Galeria",
+    "location": "Ubicació",
+    "contact": "Contacte",
+    "bookNow": "Reservar Ara"
+  },
+  "hero": {
+    "title": "Casa Mediterrània",
+    "subtitle": "Casa de 2 plantes i 3 habitacions en ubicació privilegiada",
+    "bookingForm": {
+      "title": "Reserva la teva estada",
+      "checkIn": "Entrada",
+      "checkOut": "Sortida",
+      "guests": "Hostes",
+      "search": "Cercar"
+    }
+  },
+  "features": {
+    "title": "Per què triar la nostra casa?",
+    "subtitle": "Gaudeix d'una experiència única a la nostra casa completament equipada",
+    "guests": {
+      "title": "Fins a 8 Hostes",
+      "description": "Espai còmode per a famílies grans o grups d'amics"
+    },
+    "wifi": {
+      "title": "WiFi Gratuït",
+      "description": "Internet d'alta velocitat a tota la casa"
+    },
+    "parking": {
+      "title": "Aparcament",
+      "description": "Aparcament privat gratuït"
+    },
+    "kitchen": {
+      "title": "Cuina Completa",
+      "description": "Cuina totalment equipada per preparar els teus àpats"
+    }
+  },
+  "gallery": {
+    "title": "Galeria d'Imatges",
+    "subtitle": "Descobreix tots els espais de la nostra bonica casa",
+    "exterior": "Vista Exterior",
+    "livingRoom": "Sala d'Estar",
+    "bedroom": "Habitació Principal"
+  },
+  "property": {
+    "title": "Sobre la Propietat",
+    "description": "La nostra bonica casa de 2 plantes i 3 habitacions està dissenyada per oferir-te la màxima comoditat durant la teva estada. Amb espais amplis i lluminosos, decoració moderna i totes les comoditats que necessites.",
+    "badges": {
+      "bedrooms": "3 Habitacions",
+      "bathrooms": "2 Banys",
+      "floors": "2 Plantes"
+    },
+    "amenities": {
+      "title": "Comoditats",
+      "kitchen": {
+        "title": "Cuina",
+        "description": "Nevera, fogons, forn, microones, cafetera, estris complets"
+      },
+      "entertainment": {
+        "title": "Entreteniment",
+        "description": "TV de pantalla plana, WiFi d'alta velocitat, sistema de so"
+      },
+      "comfort": {
+        "title": "Comoditats",
+        "description": "Aire condicionat, calefacció, rentadora, assecadora, planxa"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "El que diuen els nostres hostes",
+    "reviews": [
+      {
+        "text": "Una casa increïble, molt neta i amb totes les comoditats. La ubicació és perfecta i l'amfitrió molt atent.",
+        "author": "Maria González"
+      },
+      {
+        "text": "Perfecta per a famílies. Els nens van gaudir molt i nosaltres vam poder relaxar-nos. Definitivament tornarem.",
+        "author": "Carles Rodríguez"
+      },
+      {
+        "text": "Excel·lent relació qualitat-preu. La casa va superar les nostres expectatives en tots els aspectes.",
+        "author": "Anna Martínez"
+      }
+    ]
+  },
+  "location": {
+    "title": "Ubicació Privilegiada",
+    "subtitle": "A prop de les millors atraccions i serveis",
+    "mapPlaceholder": "Mapa interactiu",
+    "mapNote": "Ubicació exacta disponible després de la reserva",
+    "nearbyTitle": "Llocs d'Interès Propers",
+    "nearby": {
+      "historic": {
+        "name": "Centre Històric",
+        "distance": "5 minuts en cotxe"
+      },
+      "beach": {
+        "name": "Platja Principal",
+        "distance": "10 minuts en cotxe"
+      },
+      "supermarket": {
+        "name": "Supermercat",
+        "distance": "3 minuts caminant"
+      },
+      "restaurants": {
+        "name": "Restaurants",
+        "distance": "2 minuts caminant"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacta'ns",
+    "subtitle": "Tens preguntes? Som aquí per ajudar-te",
+    "form": {
+      "title": "Envia'ns un missatge",
+      "subtitle": "Et respondrem el més aviat possible",
+      "name": "Nom",
+      "namePlaceholder": "El teu nom",
+      "email": "Email",
+      "emailPlaceholder": "el-teu@email.com",
+      "message": "Missatge",
+      "messagePlaceholder": "El teu missatge...",
+      "send": "Enviar Missatge"
+    },
+    "info": {
+      "title": "Informació de Contacte",
+      "phone": "Telèfon",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "Horaris d'Atenció",
+      "weekdays": "Dilluns - Divendres",
+      "saturday": "Dissabtes",
+      "sunday": "Diumenges"
+    }
+  },
+  "footer": {
+    "description": "La teva llar lluny de casa. Gaudeix d'una experiència única a la nostra bonica propietat.",
+    "quickLinks": "Enllaços Ràpids",
+    "followUs": "Segueix-nos",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "© 2025 Casa Vacacional. Tots els drets reservats."
+  }
+}
+

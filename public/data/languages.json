@@ -1,0 +1,20 @@
+{
+  "languages": {
+    "es": {
+      "name": "Castellano",
+      "flag": "🇪🇸",
+      "default": true
+    },
+    "ca": {
+      "name": "Català",
+      "flag": "🏴󠁥󠁳󠁣󠁴󠁿",
+      "default": false
+    },
+    "en": {
+      "name": "English",
+      "flag": "🇬🇧",
+      "default": false
+    }
+  }
+}
+
