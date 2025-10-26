@@ -9,9 +9,9 @@
     <meta property="og:title" content="Casa Vacacional - Alquiler de Casa de 3 Habitaciones">
     <meta property="og:description" content="Casa vacacional de 2 plantas y 3 habitaciones para alquiler. Ubicación privilegiada, completamente equipada.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/casa-exterior.jpg">
+    <meta property="og:image" content="images/casa-exterior.jpg">
     <title>Casa Vacacional - Alquiler de Casa de 3 Habitaciones</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
@@ -57,31 +57,31 @@
         <div class="hero-content">
             <div class="container">
                 <div class="hero-text">
-                    <h2 id="hero-title" data-i18n="hero.title">Tu Casa de Ensueño</h2>
-                    <p id="hero-subtitle" data-i18n="hero.subtitle">Casa de 2 plantas y 3 habitaciones en ubicación privilegiada</p>
+                    <h2 id="hero-title" data-i18n="hero.title"><%= t.hero.title %></h2>
+                    <p id="hero-subtitle" data-i18n="hero.subtitle"><%= t.hero.subtitle %></p>
                 </div>
                 
                 <!-- Formulario de Reserva -->
                 <div id="booking-form" class="booking-form">
                     <div class="form-header">
-                        <h3 data-i18n="hero.bookingForm.title">Reserva tu estancia</h3>
+                        <h3 data-i18n="hero.bookingForm.title"><%= t.hero.bookingForm.title %></h3>
                     </div>
                     <div class="form-content">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="checkin" data-i18n="hero.bookingForm.checkIn">Check-in</label>
+                                <label for="checkin" data-i18n="hero.bookingForm.checkIn"><%= t.hero.bookingForm.checkIn %></label>
                                 <input type="date" id="checkin" name="checkin">
                             </div>
                             <div class="form-group">
-                                <label for="checkout" data-i18n="hero.bookingForm.checkOut">Check-out</label>
+                                <label for="checkout" data-i18n="hero.bookingForm.checkOut"><%= t.hero.bookingForm.checkOut %></label>
                                 <input type="date" id="checkout" name="checkout">
                             </div>
                             <div class="form-group">
-                                <label for="guests" data-i18n="hero.bookingForm.guests">Huéspedes</label>
+                                <label for="guests" data-i18n="hero.bookingForm.guests"><%= t.hero.bookingForm.guests %></label>
                                 <input type="number" id="guests" name="guests" min="1" max="8" value="2">
                             </div>
                             <div class="form-group">
-                                <button type="button" id="search-btn" data-i18n="hero.bookingForm.search">Buscar</button>
+                                <button type="button" id="search-btn" data-i18n="hero.bookingForm.search"><%= t.hero.bookingForm.search %></button>
                             </div>
                         </div>
                     </div>
@@ -94,33 +94,33 @@
     <section id="features" class="features-section">
         <div class="container">
             <div class="section-header">
-                <h3 data-i18n="features.title">¿Por qué elegir nuestra casa?</h3>
-                <p data-i18n="features.subtitle">Disfruta de una experiencia única en nuestra casa completamente equipada</p>
+                <h3 data-i18n="features.title"><%= t.features.title %></h3>
+                <p data-i18n="features.subtitle"><%= t.features.subtitle %></p>
             </div>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">👥</div>
-                    <h4 data-i18n="features.guests.title">Hasta 8 Huéspedes</h4>
-                    <p data-i18n="features.guests.description">Espacio cómodo para familias grandes o grupos de amigos</p>
+                    <h4 data-i18n="features.guests.title"><%= t.features.guests.title %></h4>
+                    <p data-i18n="features.guests.description"><%= t.features.guests.description %></p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">📶</div>
-                    <h4 data-i18n="features.wifi.title">WiFi Gratuito</h4>
-                    <p data-i18n="features.wifi.description">Internet de alta velocidad en toda la casa</p>
+                    <h4 data-i18n="features.wifi.title"><%= t.features.wifi.title %></h4>
+                    <p data-i18n="features.wifi.description"><%= t.features.wifi.description %></p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">🚗</div>
-                    <h4 data-i18n="features.parking.title">Estacionamiento</h4>
-                    <p data-i18n="features.parking.description">Estacionamiento privado gratuito</p>
+                    <h4 data-i18n="features.parking.title"><%= t.features.parking.title %></h4>
+                    <p data-i18n="features.parking.description"><%= t.features.parking.description %></p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">☕</div>
-                    <h4 data-i18n="features.kitchen.title">Cocina Completa</h4>
-                    <p data-i18n="features.kitchen.description">Cocina totalmente equipada para preparar tus comidas</p>
+                    <h4 data-i18n="features.kitchen.title"><%= t.features.kitchen.title %></h4>
+                    <p data-i18n="features.kitchen.description"><%= t.features.kitchen.description %></p>
                 </div>
             </div>
         </div>
@@ -130,29 +130,29 @@
     <section id="galeria" class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <h3 data-i18n="gallery.title">Galería de Imágenes</h3>
-                <p data-i18n="gallery.subtitle">Descubre todos los espacios de nuestra hermosa casa</p>
+                <h3 data-i18n="gallery.title"><%#= t.gallery.title %></h3>
+                <p data-i18n="gallery.subtitle"><%#= t.gallery.subtitle %></p>
             </div>
             
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="assets/images/casa-exterior.jpg" alt="Vista Exterior" loading="lazy">
+                    <img src="/images/casa-exterior.jpg" alt="<%= t.gallery.exterior %>" loading="lazy">
                     <div class="gallery-overlay">
-                        <p data-i18n="gallery.exterior">Vista Exterior</p>
+                        <p data-i18n="gallery.exterior"><%= t.gallery.exterior %></p>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="assets/images/sala-estar.jpg" alt="Sala de Estar" loading="lazy">
+                    <img src="/images/sala-estar.jpg" alt="<%= t.gallery.livingRoom %>" loading="lazy">
                     <div class="gallery-overlay">
-                        <p data-i18n="gallery.livingRoom">Sala de Estar</p>
+                        <p data-i18n="gallery.livingRoom"><%= t.gallery.livingRoom %></p>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="assets/images/habitacion-principal.jpg" alt="Habitación Principal" loading="lazy">
+                    <img src="/images/habitacion-principal.jpg" alt="<%= t.gallery.bedroom %>" loading="lazy">
                     <div class="gallery-overlay">
-                        <p data-i18n="gallery.bedroom">Habitación Principal</p>
+                        <p data-i18n="gallery.bedroom"><%= t.gallery.bedroom %></p>
                     </div>
                 </div>
             </div>
@@ -164,51 +164,51 @@
         <div class="container">
             <div class="property-content">
                 <div class="property-info">
-                    <h3 data-i18n="property.title">Acerca de la Propiedad</h3>
-                    <p data-i18n="property.description">Nuestra hermosa casa de 2 plantas y 3 habitaciones está diseñada para ofrecerte la máxima comodidad durante tu estancia. Con espacios amplios y luminosos, decoración moderna y todas las amenidades que necesitas.</p>
+                    <h3 data-i18n="property.title"><%= t.property.title %></h3>
+                    <p data-i18n="property.description"><%= t.property.description %></p>
                     
                     <div class="property-badges">
-                        <span class="badge" data-i18n="property.badges.bedrooms">3 Habitaciones</span>
-                        <span class="badge" data-i18n="property.badges.bathrooms">2 Baños</span>
-                        <span class="badge" data-i18n="property.badges.floors">2 Plantas</span>
+                        <span class="badge" data-i18n="property.badges.bedrooms"><%= t.property.badges.bedrooms %></span>
+                        <span class="badge" data-i18n="property.badges.bathrooms"><%= t.property.badges.bathrooms %></span>
+                        <span class="badge" data-i18n="property.badges.floors"><%= t.property.badges.floors %></span>
                     </div>
                     
                     <div class="property-features">
                         <div class="property-feature">
                             <span class="feature-icon">👥</span>
-                            <span data-i18n="features.guests.title">Hasta 8 Huéspedes</span>
+                            <span data-i18n="features.guests.title"><%= t.features.guests.title %></span>
                         </div>
                         <div class="property-feature">
                             <span class="feature-icon">📶</span>
-                            <span data-i18n="features.wifi.title">WiFi Gratuito</span>
+                            <span data-i18n="features.wifi.title"><%= t.features.wifi.title %></span>
                         </div>
                         <div class="property-feature">
                             <span class="feature-icon">🚗</span>
-                            <span data-i18n="features.parking.title">Estacionamiento</span>
+                            <span data-i18n="features.parking.title"><%= t.features.parking.title %></span>
                         </div>
                         <div class="property-feature">
                             <span class="feature-icon">☕</span>
-                            <span data-i18n="features.kitchen.title">Cocina Completa</span>
+                            <span data-i18n="features.kitchen.title"><%= t.features.kitchen.title %></span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="amenities-info">
-                    <h4 data-i18n="property.amenities.title">Amenidades</h4>
+                    <h4 data-i18n="property.amenities.title"><%= t.property.amenities.title %></h4>
                     <div class="amenities-grid">
                         <div class="amenity-card">
-                            <h5 data-i18n="property.amenities.kitchen.title">Cocina</h5>
-                            <p data-i18n="property.amenities.kitchen.description">Refrigerador, estufa, horno, microondas, cafetera, utensilios completos</p>
+                            <h5 data-i18n="property.amenities.kitchen.title"><%= t.property.amenities.kitchen.title %></h5>
+                            <p data-i18n="property.amenities.kitchen.description"><%= t.property.amenities.kitchen.description %></p>
                         </div>
                         
                         <div class="amenity-card">
-                            <h5 data-i18n="property.amenities.entertainment.title">Entretenimiento</h5>
-                            <p data-i18n="property.amenities.entertainment.description">TV de pantalla plana, WiFi de alta velocidad, sistema de sonido</p>
+                            <h5 data-i18n="property.amenities.entertainment.title"><%= t.property.amenities.entertainment.title %></h5>
+                            <p data-i18n="property.amenities.entertainment.description"><%= t.property.amenities.entertainment.description %></p>
                         </div>
                         
                         <div class="amenity-card">
-                            <h5 data-i18n="property.amenities.comfort.title">Comodidades</h5>
-                            <p data-i18n="property.amenities.comfort.description">Aire acondicionado, calefacción, lavadora, secadora, plancha</p>
+                            <h5 data-i18n="property.amenities.comfort.title"><%= t.property.amenities.comfort.title %></h5>
+                            <p data-i18n="property.amenities.comfort.description"><%= t.property.amenities.comfort.description %></p>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
     <section id="testimonials" class="testimonials-section">
         <div class="container">
             <div class="section-header">
-                <h3 data-i18n="testimonials.title">Lo que dicen nuestros huéspedes</h3>
+                <h3 data-i18n="testimonials.title"><%= t.testimonials.title %></h3>
             </div>
             
             <div class="testimonials-grid">
@@ -249,51 +249,51 @@
     <section id="ubicacion" class="location-section">
         <div class="container">
             <div class="section-header">
-                <h3 data-i18n="location.title">Ubicación Privilegiada</h3>
-                <p data-i18n="location.subtitle">Cerca de las mejores atracciones y servicios</p>
+                <h3 data-i18n="location.title"><%= t.location.title %></h3>
+                <p data-i18n="location.subtitle"><%= t.location.subtitle %></p>
             </div>
             
             <div class="location-content">
                 <div class="map-container">
                     <div class="map-placeholder">
                         <div class="map-icon">📍</div>
-                        <p data-i18n="location.mapPlaceholder">Mapa interactivo</p>
-                        <p class="map-note" data-i18n="location.mapNote">Ubicación exacta disponible tras la reserva</p>
+                        <p data-i18n="location.mapPlaceholder"><%= t.location.mapPlaceholder %></p>
+                        <p class="map-note" data-i18n="location.mapNote"><%= t.location.mapNote %></p>
                     </div>
                 </div>
                 
                 <div class="nearby-places">
-                    <h4 data-i18n="location.nearbyTitle">Lugares de Interés Cercanos</h4>
+                    <h4 data-i18n="location.nearbyTitle"><%= t.location.nearbyTitle %></h4>
                     <div class="places-list">
                         <div class="place-item">
                             <span class="place-icon">📍</span>
                             <div class="place-info">
-                                <p class="place-name" data-i18n="location.nearby.historic.name">Centro Histórico</p>
-                                <p class="place-distance" data-i18n="location.nearby.historic.distance">5 minutos en auto</p>
+                                <p class="place-name" data-i18n="location.nearby.historic.name"><%= t.location.nearby.historic.name %></p>
+                                <p class="place-distance" data-i18n="location.nearby.historic.distance"><%= t.location.nearby.historic.distance %></p>
                             </div>
                         </div>
                         
                         <div class="place-item">
                             <span class="place-icon">📍</span>
                             <div class="place-info">
-                                <p class="place-name" data-i18n="location.nearby.beach.name">Playa Principal</p>
-                                <p class="place-distance" data-i18n="location.nearby.beach.distance">10 minutos en auto</p>
+                                <p class="place-name" data-i18n="location.nearby.beach.name"><%= t.location.nearby.beach.name %></p>
+                                <p class="place-distance" data-i18n="location.nearby.beach.distance"><%= t.location.nearby.beach.distance %></p>
                             </div>
                         </div>
                         
                         <div class="place-item">
                             <span class="place-icon">📍</span>
                             <div class="place-info">
-                                <p class="place-name" data-i18n="location.nearby.supermarket.name">Supermercado</p>
-                                <p class="place-distance" data-i18n="location.nearby.supermarket.distance">3 minutos caminando</p>
+                                <p class="place-name" data-i18n="location.nearby.supermarket.name"><%= t.location.nearby.supermarket.name %></p>
+                                <p class="place-distance" data-i18n="location.nearby.supermarket.distance"><%= t.location.nearby.supermarket.distance %></p>
                             </div>
                         </div>
                         
                         <div class="place-item">
                             <span class="place-icon">📍</span>
                             <div class="place-info">
-                                <p class="place-name" data-i18n="location.nearby.restaurants.name">Restaurantes</p>
-                                <p class="place-distance" data-i18n="location.nearby.restaurants.distance">2 minutos caminando</p>
+                                <p class="place-name" data-i18n="location.nearby.restaurants.name"><%= t.location.nearby.restaurants.name %></p>
+                                <p class="place-distance" data-i18n="location.nearby.restaurants.distance"><%= t.location.nearby.restaurants.distance %></p>
                             </div>
                         </div>
                     </div>
@@ -306,42 +306,46 @@
     <section id="contacto" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h3 data-i18n="contact.title">Contáctanos</h3>
-                <p data-i18n="contact.subtitle">¿Tienes preguntas? Estamos aquí para ayudarte</p>
+                <h3 data-i18n="contact.title"><%= t.contact.title %></h3>
+                <p data-i18n="contact.subtitle"><%= t.contact.subtitle %></p>
             </div>
             
             <div class="contact-content">
                 <div class="contact-form-container">
                     <div class="form-header">
-                        <h4 data-i18n="contact.form.title">Envíanos un mensaje</h4>
-                        <p data-i18n="contact.form.subtitle">Te responderemos lo antes posible</p>
+                        <h4 data-i18n="contact.form.title"><%= t.contact.form.title %></h4>
+                        <p data-i18n="contact.form.subtitle"><%= t.contact.form.subtitle %></p>
                     </div>
                     <form id="contact-form" class="contact-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="contact-name" data-i18n="contact.form.name">Nombre</label>
+                                <label for="contact-name" data-i18n="contact.form.name"><%= t.contact.form.name %></label>
                                 <input type="text" id="contact-name" name="name" data-i18n-placeholder="contact.form.namePlaceholder">
                             </div>
                             <div class="form-group">
-                                <label for="contact-email" data-i18n="contact.form.email">Email</label>
+                                <label for="contact-email" data-i18n="contact.form.email"><%= t.contact.form.email %></label>
                                 <input type="email" id="contact-email" name="email" data-i18n-placeholder="contact.form.emailPlaceholder">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="contact-message" data-i18n="contact.form.message">Mensaje</label>
+                            <label for="contact-message" data-i18n="contact.form.message"><%= t.contact.form.message %></label>
                             <textarea id="contact-message" name="message" rows="4" data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
                         </div>
-                        <button type="submit" data-i18n="contact.form.send">Enviar Mensaje</button>
+                        <!--button type="submit" data-i18n="contact.form.send"><%= t.contact.form.send %></button-->
+                        <button type="submit" class="contact-submit-btn" data-i18n="contact.form.send">
+                            <%= t.contact.form.send %>
+                            <span id="submit-spinner" class="loading-spinner d-none" role="status" aria-hidden="true"></span>
+                        </button>
                     </form>
                 </div>
                 
                 <div class="contact-info">
                     <div class="info-section">
-                        <h4 data-i18n="contact.info.title">Información de Contacto</h4>
+                        <h4 data-i18n="contact.info.title"><%= t.contact.info.title %></h4>
                         <div class="contact-item">
                             <span class="contact-icon">📞</span>
                             <div class="contact-details">
-                                <p class="contact-label" data-i18n="contact.info.phone">Teléfono</p>
+                                <p class="contact-label" data-i18n="contact.info.phone"><%= t.contact.info.phone %></p>
                                 <p class="contact-value">+1 (555) 123-4567</p>
                             </div>
                         </div>
@@ -349,7 +353,7 @@
                         <div class="contact-item">
                             <span class="contact-icon">✉️</span>
                             <div class="contact-details">
-                                <p class="contact-label" data-i18n="contact.info.email">Email</p>
+                                <p class="contact-label" data-i18n="contact.info.email"><%= t.contact.info.email %></p>
                                 <p class="contact-value">info@casavacacional.com</p>
                             </div>
                         </div>
@@ -364,18 +368,18 @@
                     </div>
                     
                     <div class="hours-section">
-                        <h4 data-i18n="contact.hours.title">Horarios de Atención</h4>
+                        <h4 data-i18n="contact.hours.title"><%= t.contact.hours.title %></h4>
                         <div class="hours-list">
                             <div class="hours-item">
-                                <span data-i18n="contact.hours.weekdays">Lunes - Viernes</span>
+                                <span data-i18n="contact.hours.weekdays"><%= t.contact.hours.weekdays %></span>
                                 <span>9:00 AM - 8:00 PM</span>
                             </div>
                             <div class="hours-item">
-                                <span data-i18n="contact.hours.saturday">Sábados</span>
+                                <span data-i18n="contact.hours.saturday"><%= t.contact.hours.saturday %></span>
                                 <span>10:00 AM - 6:00 PM</span>
                             </div>
                             <div class="hours-item">
-                                <span data-i18n="contact.hours.sunday">Domingos</span>
+                                <span data-i18n="contact.hours.sunday"><%= t.contact.hours.sunday %></span>
                                 <span>12:00 PM - 5:00 PM</span>
                             </div>
                         </div>
@@ -391,21 +395,21 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h5>Casa Vacacional</h5>
-                    <p data-i18n="footer.description">Tu hogar lejos de casa. Disfruta de una experiencia única en nuestra hermosa propiedad.</p>
+                    <p data-i18n="footer.description"><%= t.footer.description %></p>
                 </div>
                 
                 <div class="footer-section">
-                    <h6 data-i18n="footer.quickLinks">Enlaces Rápidos</h6>
+                    <h6 data-i18n="footer.quickLinks"><%= t.footer.quickLinks %></h6>
                     <div class="footer-links">
-                        <a href="#inicio" data-i18n="nav.home">Inicio</a>
-                        <a href="#galeria" data-i18n="nav.gallery">Galería</a>
-                        <a href="#ubicacion" data-i18n="nav.location">Ubicación</a>
-                        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+                        <a href="#inicio" data-i18n="nav.home"><%= t.nav.home %></a>
+                        <a href="#galeria" data-i18n="nav.gallery"><%= t.nav.gallery %></a>
+                        <a href="#ubicacion" data-i18n="nav.location"><%= t.nav.location %></a>
+                        <a href="#contacto" data-i18n="nav.contact"><%= t.nav.contact %></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h6 data-i18n="footer.followUs">Síguenos</h6>
+                    <h6 data-i18n="footer.followUs"><%= t.footer.followUs %></h6>
                     <div class="social-links">
                         <a href="#" data-i18n="footer.social.facebook">Facebook</a>
                         <a href="#" data-i18n="footer.social.instagram">Instagram</a>
@@ -415,14 +419,14 @@
             </div>
             
             <div class="footer-bottom">
-                <p data-i18n="footer.copyright">© 2025 Casa Vacacional. Todos los derechos reservados.</p>
+                <p data-i18n="footer.copyright"><%= t.footer.copyright %></p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/translations.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
 

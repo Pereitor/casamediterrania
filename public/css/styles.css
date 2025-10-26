@@ -276,7 +276,7 @@ body {
     left: 0;
     width: 100%;
     height: 120%;
-    background-image: url('../assets/images/casa-exterior.jpg');
+    background-image: url('/images/casa-exterior.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

@@ -7,7 +7,7 @@ class TranslationManager {
     constructor() {
         this.translations = {};
         this.languages = {};
-        this.currentLanguage = 'es';
+        this.currentLanguage = 'ca';
         this.isLoaded = false;
     }
 
@@ -42,7 +42,7 @@ class TranslationManager {
      */
     async loadLanguages() {
         try {
-            const response = await fetch('data/languages.json');
+            const response = await fetch('/locales/languages.json');
             if (!response.ok) {
                 throw new Error(`Error HTTP: ${response.status}`);
             }
@@ -113,7 +113,7 @@ class TranslationManager {
      */
     async loadLanguageFile(language) {
         try {
-            const response = await fetch(`data/${language}.json`);
+            const response = await fetch(`/locales/${language}.json`);
             if (!response.ok) {
                 throw new Error(`Error HTTP: ${response.status} para idioma ${language}`);
             }

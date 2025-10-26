@@ -7,21 +7,26 @@ const path = require('path');
 const acceptLanguage = require('accept-language');
 
 const app = express();
+
+// Static serving FIRST (best practice—handles /css, /js, /images without /public/)
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'public'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
 app.use(i18n.init);
 
 acceptLanguage.languages(['es', 'ca', 'en']);
 
 i18n.configure({
     locales: ['es', 'ca', 'en'],
-    directory: path.join(__dirname, 'public/data'),
-    defaultLocale: 'es',
+    directory: path.join(__dirname, 'public/locales'),
+    defaultLocale: 'ca',
     queryParameter: 'lang',
     objectNotation: true
 });
+
+// Import DB pool (from config)
+const dbPool = require('./config/database');
 
 // Shared function to generate translation object
 function getTranslations(req, res) {
@@ -47,9 +52,7 @@ app.post('/api/submit', async (req, res) => {
     const { name, email, message } = req.body;
     if (!name || !email || !message) return res.status(400).json({ error: 'All fields required' });
     try {
-        const connection = await mysql.createConnection({ host: 'localhost', user: 'root', password: '', database: 'casamediterrania' });
-        await connection.execute('INSERT INTO contact_submissions (name, email, message) VALUES (?, ?, ?)', [name, email, message]);
-        await connection.end();
+        const [result] = await dbPool.execute('INSERT INTO contact_submissions (name, email, message) VALUES (?, ?, ?)', [name, email, message]);
         res.status(200).json({ success: true, message: 'Submission successful' });
     } catch (error) {
         res.status(500).json({ success: false, error: 'Database error: ' + error.code + "; " + error.message});
@@ -71,4 +74,11 @@ app.get('/api/calendar', async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log('Server on http://localhost:3000'));
+// 404 Catch-All
+app.use((req, res) => {
+    res.status(404).render('404', { t: req.t });  // Assume views/404.ejs; or send plain text
+});
+
+// Listen on PORT env or 3000
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server on http://localhost:${PORT}`));
