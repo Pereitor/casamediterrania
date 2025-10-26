@@ -122,7 +122,13 @@
       "emailPlaceholder": "el-teu@email.com",
       "message": "Missatge",
       "messagePlaceholder": "El teu missatge...",
-      "send": "Enviar Missatge"
+      "sending": "S'està enviant...",
+      "send": "Envia el missatge",
+      "success": "S'ha enviat el missatge! Us respondrem tan aviat com siga possible",
+      "error": "Error en l'enviament",
+      "networkError": "Error de connexió - Comproveu que la vostra connexió estiga activa",
+      "invalidEmail": "Per favor, introduïu un correu vàlid",
+      "requiredFields": "Falten camps obligatoris"
     },
     "info": {
       "title": "Informació de Contacte",

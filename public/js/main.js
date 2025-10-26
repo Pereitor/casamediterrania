@@ -329,31 +329,63 @@ class CasaVacacionalApp {
     /**
      * Maneja el envío del formulario de contacto
      */
-    handleContactSubmit() {
+    async handleContactSubmit() {
         const name = document.getElementById('contact-name').value.trim();
         const email = document.getElementById('contact-email').value.trim();
         const message = document.getElementById('contact-message').value.trim();
+        const submitBtn = document.querySelector('#contact-form button[type="submit"]');
+        const spinner = document.getElementById('submit-spinner'); // Add <span id="submit-spinner" class="spinner-border d-none"></span> in HTML
 
         // Validaciones
         if (!name || !email || !message) {
-            alert(window.t('contact.form.requiredFields') || 'Por favor completa todos los campos.');
+            alert(window.t('contact.form.requiredFields'));
             return;
         }
 
         if (!this.isValidEmail(email)) {
-            alert(window.t('contact.form.invalidEmail') || 'Por favor ingresa un email válido.');
+            alert(window.t('contact.form.invalidEmail'));
             return;
+        }
+
+        // UI: Disable + loading
+        submitBtn.disabled = true;
+        submitBtn.textContent = window.t('contact.form.sending'); // Add to translations JSON
+        if (spinner) spinner.classList.remove('d-none');
+
+        try {
+            const response = await fetch('/api/submit', {  // Node endpoint
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest' // AJAX flag
+                },
+                body: JSON.stringify({ name, email, message })
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                console.log('📧 Contact form submitted:', { name, email, message });
+                alert(window.t('contact.form.success'));
+                document.getElementById('contact-form').reset();
+            } else {
+                const errorMsg = window.t('contact.form.error') + ". " + result.error;
+                alert(errorMsg);
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert(window.t('contact.form.networkError'));
+        } finally {
+            // Reset UI
+            submitBtn.disabled = false;
+            submitBtn.textContent = window.t('contact.form.send');
+            if (spinner) spinner.classList.add('d-none');
         }
 
         // Procesar formulario (aquí puedes agregar tu lógica)
         console.log('📧 Formulario de contacto:', { name, email, message });
-        
-        const successMessage = window.t('contact.form.success') || 
-                              '¡Mensaje enviado! Te responderemos lo antes posible.';
-        alert(successMessage);
-        
-        // Limpiar formulario
-        document.getElementById('contact-form').reset();
+
+        //alert(window.t('contact.form.success'));
     }
 
     /**

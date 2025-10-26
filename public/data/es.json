@@ -92,6 +92,10 @@
     "mapNote": "Ubicación exacta disponible tras la reserva",
     "nearbyTitle": "Lugares de interés cercanos",
     "nearby": {
+      "restaurants": {
+        "name": "Bares y restaurantes",
+        "distance": "A 2 minutos caminando"
+      },
       "historic": {
         "name": "Centro Histórico",
         "distance": "5 minutos en auto"
@@ -103,10 +107,6 @@
       "supermarket": {
         "name": "Supermercados",
         "distance": "A menos de 5 minutos caminando"
-      },
-      "restaurants": {
-        "name": "Bares y restaurantes",
-        "distance": "A 2 minutos caminando"
       }
     }
   },
@@ -122,7 +122,13 @@
       "emailPlaceholder": "tu@email.com",
       "message": "Mensaje",
       "messagePlaceholder": "Tu mensaje...",
-      "send": "Enviar Mensaje"
+      "sending": "Enviando...",
+      "send": "Enviar mensaje",
+      "success": "¡Mensaje enviado! Te responderemos lo antes posible",
+      "error": "Fallo en el envío",
+      "networkError": "Error de conexión - Comprueba que tu conexión esté activa",
+      "invalidEmail": "Por favor, introduce un email válido",
+      "requiredFields": "Faltan campos obligatorios"
     },
     "info": {
       "title": "Información de Contacto",

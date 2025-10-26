@@ -231,6 +231,16 @@ body {
     display: none;
 }
 
+/* Responsive: Smaller spinner on mobile */
+@media (max-width: 576px) {
+    .loading-spinner {
+        width: 14px;
+        height: 14px;
+        border-width: 1.5px;
+        margin-left: var(--spacing-xs, 2px);  /* Tighter on small screens */
+    }
+}
+
 @media (max-width: 768px) {
     .desktop-nav {
         display: none;
@@ -818,6 +828,38 @@ section {
 .contact-form button:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+}
+
+/* Extend your existing button styles for loading/disabled */
+.contact-submit-btn:disabled {
+    background: var(--primary-dark, #6c757d);  /* Fallback gray if no --primary-dark */
+    cursor: not-allowed;
+    opacity: 0.7;  /* Dim for loading feedback */
+    transform: none;  /* Override hover lift during disabled */
+}
+
+/* Spinner (Pure CSS, matches your theme) */
+.loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--text-light, #ffffff);  /* Matches button text */
+    border-top: 2px solid transparent;  /* Gap for rotation */
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+    margin-left: var(--spacing-xs, 4px);  /* Space from text; use your var */
+    vertical-align: middle;
+}
+
+/* Keyframe (add once if not already) */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide toggle (simple utility) */
+.d-none {
+    display: none !important;
 }
 
 .contact-info {

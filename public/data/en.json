@@ -122,7 +122,13 @@
       "emailPlaceholder": "your@email.com",
       "message": "Message",
       "messagePlaceholder": "Your message...",
-      "send": "Send Message"
+      "sending": "Sending...",
+      "send": "Send Message",
+      "success": "Message sent! We will reply to you as soon as possible",
+      "error": "Error submitting form",
+      "networkError": "Network error - Please check your connection is active",
+      "invalidEmail": "Please enter a valid email",
+      "requiredFields": "Required fields missing"
     },
     "info": {
       "title": "Contact Information",
