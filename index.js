@@ -38,7 +38,8 @@ app.get('/', (req, res) => {
     req.setLocale(locale);
     res.render('index', {
         t: getTranslations(req, res),
-        locale: locale
+        locale: locale,
+        RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY
     });
 });
 
