@@ -322,7 +322,7 @@
                     <!-- Callback Function -->
                     <script>
                         function onSubmit(token) {
-                            document.getElementById("contact-form").submit();
+                            document.getElementById("contact-form").submit();return false;
                             //document.getElementById("recaptcha-token").value = token;
                             //handleContactSubmit();  # Your existing submit function (sends token to /api/submit)
                         }
