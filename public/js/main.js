@@ -320,6 +320,7 @@ class CasaVacacionalApp {
 
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            //document.getElementById("recaptcha-token").value = token;
             this.handleContactSubmit();
         });
 
