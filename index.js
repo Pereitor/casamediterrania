@@ -53,19 +53,6 @@ app.post('/api/submit', async (req, res) => {
     const { name, email, message } = req.body;
     if (!name || !email || !message) return res.status(400).json({ error: 'All fields required' });
     try {
-        // Verify reCAPTCHA
-        const verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
-        const verifyResponse = await axios.post(verifyUrl, null, {
-            params: {
-                secret: process.env.RECAPTCHA_SECRET_KEY,
-                response: token,
-                remoteip: req.ip  // Optional: Client IP for better scoring
-            }
-        });
-        const { success, score } = verifyResponse.data;
-        if (!success || score < 0.5) {
-            return res.status(400).json({ error: 'Verification failed—try again.' });
-        }
         const [result] = await dbPool.execute('INSERT INTO contact_submissions (name, email, message) VALUES (?, ?, ?)', [name, email, message]);
         res.status(200).json({ success: true, message: 'Submission successful' });
     } catch (error) {
