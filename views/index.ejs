@@ -320,14 +320,14 @@
                     <script src="https://www.google.com/recaptcha/enterprise.js?render=<%= RECAPTCHA_SITE_KEY %>"></script>
 
                     <!-- Callback Function -->
-                    <!--script>
+                    <script>
                         //function onSubmit(token) {
                         window.onSubmit = function(token) {
-                            //document.getElementById("contact-form").submit();return false;
                             document.getElementById("recaptcha-token").value = token;
-                            handleContactSubmit();  //Your existing submit function (sends token to /api/submit)
+                            //handleContactSubmit();  //Your existing submit function (sends token to /api/submit)
+                            document.getElementById("contact-form").dispatchEvent(new Event('submit')); //submit();return false;
                         }
-                    </script-->
+                    </script>
                     <form id="contact-form" class="contact-form">
                         <div class="form-row">
                             <div class="form-group">
